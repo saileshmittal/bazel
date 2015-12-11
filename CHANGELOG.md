@@ -1,3 +1,27 @@
+## Release 0.1.3 (2015-12-11)
+
+```
+Baseline: c765d83
+   + 30fff9f: Rollback of commit
+              ca1b21ac6d8a58041db822725b42de151b163dee.
+   + ed7b97e: Add a ~ between the version candidate and the release
+              candidate qualifier for debian package
+```
+
+New features:
+
+  - Skylark macros are now enabled in WORKSPACE file.
+
+Important changes:
+
+  - Remove obsolete --objc_per_proto_includes flag.
+  - iOS apps and extensions now have launch_storyboard
+  - Passing multiple JVM options via a single --host_jvm_args flag is
+    now deprecated. Pass each JVM option behind its own
+    --host_jvm_args flag.
+  - Resources defined locally on an android_library rule will respect
+    the neverlink attribute.
+
 ## Release 0.1.1 (2015-10-05)
 
 ```
